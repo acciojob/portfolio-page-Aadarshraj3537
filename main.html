@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 0;
+    }
+    img {
+      max-width: 150px;
+      border-radius: 50%;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    a {
+      color: #0073b1;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Profile Image -->
+  <img src="your-image.jpg" alt="Your Profile Picture">
 
-    <!-- Navigation bar with ARIA role -->
-    <nav role="navigation" aria-label="Main Navigation">
-        <ul role="list">
-            <li role="listitem"><a href="#about">About Me</a></li>
-            <li role="listitem"><a href="#skills">Skills</a></li>
-            <li role="listitem"><a href="#projects">Projects</a></li>
-            <li role="listitem"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Name -->
+  <h1>Your Name</h1>
 
-    <!-- Heading with ARIA role -->
-    <header>
-        <h1 role="heading" aria-level="1">Welcome to My Portfolio</h1>
-    </header>
+  <!-- LinkedIn Profile -->
+  <p>
+    <a href="https://www.linkedin.com/in/your-profile" target="_blank">Visit my LinkedIn profile</a>
+  </p>
 
-    <!-- Image with ARIA role and alt attribute -->
-    <section id="about">
-        <img role="img" src="profile.jpg" alt="Portrait of [Your Name]">
-        <p>I am a software developer with a passion for creating accessible and inclusive web applications. Welcome to my portfolio where I showcase my projects and skills.</p>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Here are some of my key skills:</p>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Python</li>
+    </ul>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <p>I specialize in the following:</p>
-        <ul>
-            <li>Web Development</li>
-            <li>Accessibility and Inclusive Design</li>
-            <li>Data Analysis</li>
-        </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li>Accessible Web Application</li>
-            <li>E-commerce Website</li>
-            <li>Interactive Data Visualizations</li>
-        </ul>
-    </section>
-
-    <!-- LinkedIn Profile -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at <a href="mailto:yourname@example.com">yourname@example.com</a> or connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
-    </section>
-
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Portfolio Website - A personal portfolio showcasing my skills and projects.</li>
+      <li>Weather App - A React-based application to check weather forecasts.</li>
+      <li>Task Manager - A Node.js project for managing tasks efficiently.</li>
+    </ul>
+  </section>
 </body>
 </html>
+
